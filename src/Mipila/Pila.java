@@ -13,7 +13,7 @@ public class Pila <T>implements Mipila <T>  {
     
 
  
- public T peack() {
+ public T peek() {
      return a.get(a.size()-1);
  }
  public void push(T elemento){
@@ -23,10 +23,15 @@ public class Pila <T>implements Mipila <T>  {
  public T pop(){
      return a.remove(a.size()-1);
  }
+ 
  public boolean isEmpty(){
        
      return a.isEmpty();
  }
+ public int size(){
+     return a.size();
+ }
+        
  
  
  
